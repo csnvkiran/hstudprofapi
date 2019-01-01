@@ -1,0 +1,40 @@
+server:
+  port: 8086
+  context-path: /profile
+
+spring:
+  datasource:
+     url: jdbc:oracle:thin:@//192.168.0.114:1539/smpdb.ora.com
+     username: smprofile
+     password: sai1#ram2
+     driver:
+       class: oracle.jdbc.driver.OracleDriver
+  jpa:
+     hibernate:
+       ddl-auto: none
+
+##########   ORACLE #######
+#spring:
+#  datasource:
+#     url: jdbc:oracle:thin:@//192.168.0.109:15211/xe
+#     username: STUDENT_PROFILE
+#     password: Stud#Prof
+#     driver:
+#       class: oracle.jdbc.driver.OracleDriver
+#  jpa:
+#     hibernate:
+#       ddl-auto: none
+#
+
+#spring:
+#  datasource:
+#    url: jdbc:mysql://192.168.0.109:33061/stud
+#    username: stud
+#    password: stud123
+#  jpa:
+#     hibernate:
+#       ddl-auto: create
+
+
+
+#       dialect: org.hibernate.dialect.OracleDialect
